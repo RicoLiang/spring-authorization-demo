@@ -56,7 +56,7 @@ public class JwtUtil {
 		if (ttlMillis >= 0) {
 		    long expMillis = nowMillis + ttlMillis;
 		    Date exp = new Date(expMillis);
-		    builder.setExpiration(exp);
+		    builder.setExpiration(exp); //从当前时间往后推多长时间，就是过期时间
 		}
 		return builder.compact();
 	}
