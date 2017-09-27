@@ -58,7 +58,7 @@ define(function(require, exports, module){
             localStorage.setItem("token", res.data.token);
             localStorage.setItem("refreshToken", res.data.refreshToken);
             //跳转到主界面
-            location.href ="/html/system/main.html";
+           // location.href ="/html/system/main.html";
         }else if(res.code == 1002){
             //接口返回未成功信息
             login.tip(res.msg);
